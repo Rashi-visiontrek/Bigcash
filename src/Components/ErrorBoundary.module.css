@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Special+Elite&display=swap');
+
+.logo_container{
+    width: 200px;
+    height: 200px;
+    user-select: none;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.message_container{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    user-select: none;
+    background: radial-gradient(#fffbf3, #ffe19e);
+    box-sizing: border-box;
+    padding: 20px 10px 20px 10px;
+    border-radius: 20px 18px 20px 18px;
+    box-shadow: 0px 0px 0px 6px #5e1e21, 0px 0px 8px 6px #84222b,
+      inset 0px 0px 15px 0px #614506, 6px 6px 1px 1px #e66565,
+      -6px 6px 1px 1px #e66565;
+      /* background: #a4363e; */
+      box-shadow: 5px 6px 0px -2px #620d15, -6px 5px 0px -2px #620d15,
+      0px -2px 0px 2px #ee9191, 0px 10px 0px 0px #610c14,
+      0px -10px 0px 1px #e66565;
+}
+
+.message{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Montserrat",sans-serif;
+    /* font-family: "Special Elite", sans-serif; */
+    color: #461417;
+}
+
+.back{
+    padding: 14px;
+    flex: 1;
+    min-width: 150px;
+    border-radius: 6px;
+    border: 2px solid #49181e;
+    font-family: "Special Elite", sans-serif;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 1px 2px 3px #000000;
+    cursor: pointer;
+    user-select: none;
+    background: linear-gradient(#ced869, #536d1b);
+    background: radial-gradient(#84222b, #5e1e21);
+    box-shadow: 0px 0px 0px 4px #7e1522, 0px 2px 0px 3px #e66565;
+    transition: all 0.3s;
+}
+
+.back:hover{
+    box-shadow: 0px 0px 0px 4px #7e1522, 0px 2px 0px 3px #e66565,inset 0 1px 4px 2px #e66565;
+}
+
+.back:active{
+    transform: scale(1.03);
+}

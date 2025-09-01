@@ -1,0 +1,148 @@
+/* .game_overlay{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.game_container{
+    width: 500px;
+    min-height: 100vh;
+   
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+
+.animations{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 2;
+}
+
+.animation{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.game{
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 99;
+    position: relative;
+    padding: 80px 15px 20px 15px;
+    overflow-y: hidden;
+}
+@media screen and (max-width:500px){
+    .game_container{
+        width: 100vw;   
+    }
+    .game{
+        padding: 80px 10px 20px 10px;
+    }
+} */
+ .game_overlay {
+  width: 100%;
+  min-height: 100vh; /* 🔁 was 100dvh, fixed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  /* overflow: hidden; */
+}
+
+/* CONTAINER WITH BACKGROUND IMAGE */
+.game_container {
+  width: 100%;
+  max-width: 500px;
+  height: 100vh; /* 🔁 was min-height: 100dvh, fixed */
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* MAIN CONTENT */
+.game {
+  /* width: 100%; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 60px 20px 30px; */
+  /* box-sizing: border-box; */
+  z-index: 99;
+  /* position: relative; */
+  /* overflow-y: auto; */
+}
+
+/* COIN ANIMATION */
+.coin_animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width: 100%; */
+  /* height: 100%; */
+  pointer-events: none;
+  z-index: 4;
+}
+
+.coin_lottie {
+  /* width: 100%; */
+  /* height: 100vh; */
+  /* height: 100%; */
+  /* object-fit: cover; */
+  scrollbar-width: none;
+  opacity: 0.8;
+}
+
+/* MOBILE FIXES */
+@media screen and (max-width: 500px) {
+  .game_container {
+    width: 100vw;
+    height: 100vh; /* maintain full height */
+  }
+
+  .game {
+    padding: 50px 15px 20px;
+  }
+
+}
+
+.play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+  padding: 60px 20px 30px;
+  box-sizing: border-box;
+  z-index: 99;
+  position: relative;
+}
+
+.play_lottie {
+  width: 150px;  /* adjust as needed */
+  height: 150px;
+}
+
+/* Mobile-specific tweaks */
+@media screen and (max-width: 500px) {
+  .play {
+    padding: 40px 15px 20px;
+  }
+
+  .play_lottie {
+    width: 100px;
+    height: 100px;
+  }
+}
